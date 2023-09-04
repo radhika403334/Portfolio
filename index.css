@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: black;
     color: white;
@@ -206,7 +209,7 @@ font-size: 1.7rem;
      transform: scale(1.1);
 }
 .btn{
-    display: block;
+    display: inline-block;
     margin: 60px auto;
     width: fit-content;
     border-radius: 6px;
@@ -353,15 +356,16 @@ form input, form textarea{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
-
-
-
-
     .copyright{
-        /* width: 100%; */
+        font-size: 14px;
     margin-top: 15px;
     letter-spacing: 1px;
     }
+}
+#submit-msg{
+    color: #61b752;
+    display: block;
+    /* margin-top: -20px; */
 }
 
 

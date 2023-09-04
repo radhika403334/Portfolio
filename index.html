@@ -13,11 +13,11 @@
       <div class="container">
         <nav id="navhead">
           <ul id="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
             <i class="fa fa-solid fa-close display" id="cross" onclick="closeMenu()"></i>
           </ul>
 
@@ -250,34 +250,33 @@
           </div>
 
           <div class="contact-right">
-            <form action="" method="post">
+            <form name="submit-to-google-sheet">
               <input
                 type="text"
-                name="name"
+                name="Name"
                 placeholder="Enter your name"
                 required
               />
               <input
                 type="email"
-                name="email"
+                name="Email"
                 placeholder="Enter your email"
                 required
               />
               <input
                 type="number"
-                name="phn_no"
+                name="phone_no"
                 placeholder="Enter your phone number"
                 required
               />
               <textarea
-                name="message"
+                name="Message"
                 rows="6"
                 placeholder="Enter your message"
               ></textarea>
-              <button type="submit" class="btn pink-btn sub">
-                Submit Info
-              </button>
+              <button type="submit" id="submit-btn" class="btn pink-btn sub">Submit</button>
             </form>
+            <span id="submit-msg"></span>
           </div>
         </div>
       </div>
